@@ -91,7 +91,7 @@ const app = {
 			return Math.min(Math.max(val, min), max);
 		},
 		generate() {
-			let url = `/card?user=${encodeURI(this.username.trim())}&mode=${this.playmode}`;
+			let url = `https://osu.neastooid.xyz/card?user=${encodeURI(this.username.trim())}&mode=${this.playmode}`;
 			if (this.language != "cn") {
 				url += `&lang=${this.language}`;
 			}
