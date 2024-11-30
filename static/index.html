@@ -53,19 +53,19 @@
 				</div>
 				<div id="cardmodes">
 					<div :class="{ active: cardmode == 'full_stats' }" class="cardmode" @click="cardmode = 'full_stats'">
-						<img :src="`/card?example=true&lang=${language}&animation=false`"/>
+						<img :src="`https://osu.neastooid.xyz/card?example=true&lang=${language}&animation=false`"/>
 						<div class="cardmode-label">Full<span style="opacity: .5;"> with Stats</span></div>
 					</div>
 					<div :class="{ active: cardmode == 'full_skills' }" class="cardmode" @click="cardmode = 'full_skills'" v-if="playmode == 'std'">
-						<img :src="`/card?example=true&lang=${language}&animation=false&skills=true`"/>
+						<img :src="`https://osu.neastooid.xyz/card?example=true&lang=${language}&animation=false&skills=true`"/>
 						<div class="cardmode-label">Full<span style="opacity: .5;"> with Skills</span></div>
 					</div>
 					<div :class="{ active: cardmode == 'mini' }" class="cardmode" @click="cardmode = 'mini'">
-						<img :src="`/card?example=true&lang=${language}&animation=false&mini=true`"/>
+						<img :src="`https://osu.neastooid.xyz/card?example=true&lang=${language}&animation=false&mini=true`"/>
 						<div class="cardmode-label">Mini</div>
 					</div>
 					<div :class="{ active: cardmode == 'skills' }" class="cardmode" @click="cardmode = 'skills'" v-if="playmode == 'std'">
-						<img :src="`/skills?example=true&lang=${language}&animation=false&ranking_display=global`"/>
+						<img :src="`https://osu.neastooid.xyz/skills?example=true&lang=${language}&animation=false&ranking_display=global`"/>
 						<div class="cardmode-label">Skills</div>
 					</div>
 				</div>
